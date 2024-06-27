@@ -26,7 +26,6 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'echo this is Test'
-                
             }
         }
         stage('Deploy') {
@@ -42,6 +41,7 @@ pipeline {
                 echo "Choice: ${params.CHOICE}"
                 echo "Password: ${params.PASSWORD}"
                 echo "Triggered test again"
+                error 'some failure'
             }
         }    
     }
