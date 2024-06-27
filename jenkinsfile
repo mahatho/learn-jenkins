@@ -50,7 +50,10 @@ pipeline {
             echo 'I will always say Hello again!'
         }
         success {
-            echo 'I will run when pipeine fails'
+            echo 'I will run when pipeine is success'
+        }
+        failure {
+            echo 'I will run only when pipeline fails'
         }
     }
 }
