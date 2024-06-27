@@ -15,7 +15,7 @@ pipeline {
     }
     environment {
         name: 'DEPLOY_TO' value: 'Production'
-        name:  'Greetings' value: 'Good Morning ${params.PERSON}'
+        name:  'GREETING' value: 'Good Morning'
     }
     stages {
         stage('Build') {
